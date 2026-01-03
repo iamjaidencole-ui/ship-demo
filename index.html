@@ -1,179 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Aira Freight | Fast & Reliable Shipping to Jamaica</title>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Fast, reliable, tax-free shipping from the USA to Jamaica. 5x weekly air freight. Trusted logistics partner." />
+  <title>Aira Air & Logistics</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body class="airline">
 
-<body>
+  <!-- Header -->
+  <header class="air-header">
+    <div class="brand">Aira<span>Air</span></div>
 
-<!-- LOADER -->
-<div id="spinner">
-  <div class="loader"></div>
-</div>
-
-<!-- HEADER -->
-<header class="header">
-  <div class="container header-inner">
-    <img src="img/logo-w.png" class="logo" alt="Aira Freight">
-
-    <nav class="nav">
-      <a href="#about">About</a>
+    <nav class="air-nav" id="nav">
       <a href="#services">Services</a>
-      <a href="#how">How It Works</a>
-      <a href="#faq">FAQ</a>
-      <a href="rates.html">Rates</a>
-      <a href="contact.html">Contact</a>
-      <a class="btn small" href="https://aira.courier101.com/login">Login</a>
+      <a href="#routes">Routes</a>
+      <a href="#rates">Rates</a>
+      <a href="#contact" class="cta">Ship Now</a>
     </nav>
 
-    <button id="menuBtn"><i class="fa fa-bars"></i></button>
-  </div>
-</header>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Fast & Reliable Shipping<br>to Jamaica</h1>
-    <p>5× weekly air freight • Tax-free US address • Real-time tracking</p>
-    <div class="hero-actions">
-      <a href="https://aira.courier101.com/register" class="btn primary">Create Free Account</a>
-      <a href="#how" class="btn ghost">How It Works</a>
-    </div>
-  </div>
-</section>
+  <!-- Hero -->
+  <section class="air-hero">
+    <div class="air-hero-content">
+      <h1>Move Faster.<br><span>Ship Smarter.</span></h1>
+      <p>Airline-inspired logistics connecting the U.S. to Jamaica with speed, precision, and trust.</p>
 
-<!-- TRUST -->
-<section class="trust">
-  <div class="container trust-grid">
-    <div><i class="fa fa-plane"></i><span>5× Weekly Flights</span></div>
-    <div><i class="fa fa-shield"></i><span>Secure & Insured</span></div>
-    <div><i class="fa fa-bolt"></i><span>Fast Clearance</span></div>
-    <div><i class="fa fa-location-dot"></i><span>Islandwide Delivery</span></div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container split">
-    <div>
-      <h2>Built for Speed. Designed for Jamaica.</h2>
-      <p>
-        Aira Freight was created to solve the frustration of slow, overpriced
-        courier services. We ship the way we want our own packages shipped —
-        fast, transparent, and stress-free.
-      </p>
-      <p>
-        From checkout to delivery, we handle the logistics so you don’t have to.
-      </p>
-    </div>
-    <div class="stat-cards">
-      <div class="card"><strong>1–3 Days</strong><span>US → JA</span></div>
-      <div class="card"><strong>0% US Tax</strong><span>Florida Address</span></div>
-      <div class="card"><strong>24/7</strong><span>Tracking</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section soft">
-  <div class="container">
-    <h2 class="center">Our Services</h2>
-
-    <div class="services-grid">
-      <div class="service-card">
-        <i class="fa fa-plane"></i>
-        <h3>Freight Forwarding</h3>
-        <p>5× weekly air freight and weekly sea freight for large items.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa fa-map-location-dot"></i>
-        <h3>Live Tracking</h3>
-        <p>Track your package from US warehouse to pickup or delivery.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa fa-home"></i>
-        <h3>Home Delivery</h3>
-        <p>Islandwide delivery available in select areas.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa fa-file-invoice-dollar"></i>
-        <h3>Tax-Free Address</h3>
-        <p>Use our Florida tax-exempt address and save 7% on purchases.</p>
+      <div class="air-actions">
+        <a href="#contact" class="primary">Start Shipping</a>
+        <a href="#services" class="secondary">Explore Services</a>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- HOW IT WORKS -->
-<section id="how" class="section">
-  <div class="container">
-    <h2 class="center">How It Works</h2>
-
-    <div class="steps">
-      <div><span>1</span><p>Shop online & ship to your Aira US address</p></div>
-      <div><span>2</span><p>We receive & process your package</p></div>
-      <div><span>3</span><p>Fast flight to Jamaica</p></div>
-      <div><span>4</span><p>Pickup or home delivery</p></div>
+    <div class="air-visual">
+      <div class="plane"></div>
+      <div class="cloud c1"></div>
+      <div class="cloud c2"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FAQ -->
-<section id="faq" class="section soft">
-  <div class="container">
-    <h2 class="center">FAQs</h2>
+  <!-- Services -->
+  <section id="services" class="air-section">
+    <h2>World-Class Logistics Services</h2>
 
-    <details>
-      <summary>How long does shipping take?</summary>
-      <p>1–3 business days after arrival at our US warehouse.</p>
-    </details>
-
-    <details>
-      <summary>Do you insure packages?</summary>
-      <p>Yes. Insurance available at USD $1.50 per $100 value.</p>
-    </details>
-
-    <details>
-      <summary>How do I avoid customs duties?</summary>
-      <p>Keep declared value below USD $100.</p>
-    </details>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <img src="img/logo-w.png" height="50">
-      <p>Fast, reliable shipping to Jamaica.</p>
+    <div class="air-grid">
+      <div class="air-card">✈️<h3>Air Freight</h3><p>5× weekly flights with priority handling.</p></div>
+      <div class="air-card">🚢<h3>Sea Freight</h3><p>Reliable cargo for large shipments.</p></div>
+      <div class="air-card">📦<h3>Courier</h3><p>Fast, trackable islandwide delivery.</p></div>
+      <div class="air-card">🛃<h3>Customs Support</h3><p>Clearance guidance done right.</p></div>
     </div>
-    <div>
-      <strong>Contact</strong>
-      <p>Drax Hall, St. Ann</p>
-      <p>+1 876 522 1825</p>
-      <p>airafreight@gmail.com</p>
-    </div>
-  </div>
-  <p class="copy">© Aira Freight. All rights reserved.</p>
-</footer>
+  </section>
 
-<script src="main.js"></script>
+  <!-- Routes -->
+  <section id="routes" class="air-section dark">
+    <h2>Our Network</h2>
+    <p>United States → Jamaica (Kingston, Montego Bay, Ocho Rios & islandwide)</p>
+    <div class="route-line"></div>
+  </section>
+
+  <!-- Rates -->
+  <section id="rates" class="air-section">
+    <h2>Transparent Pricing</h2>
+
+    <div class="rate-panel">
+      <div class="rate">$650 JMD / lb</div>
+      <small>Final cost based on weight & service level</small>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="air-section dark">
+    <h2>Ready for Takeoff?</h2>
+
+    <form class="air-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea placeholder="What are you shipping?"></textarea>
+      <button type="submit">Request Quote</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="air-footer">
+    © 2026 Aira Air & Logistics
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
