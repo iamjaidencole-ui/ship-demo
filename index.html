@@ -1,98 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aira Air & Logistics</title>
+  <meta charset="UTF-8">
+  <title>Aira Air Logistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="airline">
+<body>
 
-  <!-- Header -->
-  <header class="air-header">
-    <div class="brand">Aira<span>Air</span></div>
+<header class="header">
+  <div class="logo">Aira<span>Air</span></div>
 
-    <nav class="air-nav" id="nav">
-      <a href="#services">Services</a>
-      <a href="#routes">Routes</a>
-      <a href="#rates">Rates</a>
-      <a href="#contact" class="cta">Ship Now</a>
-    </nav>
+  <nav class="nav" id="nav">
+    <a href="#services">Services</a>
+    <a href="#network">Network</a>
+    <a href="#rates">Rates</a>
+    <a href="#contact" class="btn">Ship Now</a>
+  </nav>
 
-    <div class="menu-toggle" id="menuToggle">☰</div>
-  </header>
+  <div class="menu-btn" id="menuBtn">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
 
-  <!-- Hero -->
-  <section class="air-hero">
-    <div class="air-hero-content">
-      <h1>Move Faster.<br><span>Ship Smarter.</span></h1>
-      <p>Airline-inspired logistics connecting the U.S. to Jamaica with speed, precision, and trust.</p>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Global Speed.<br><span>Local Precision.</span></h1>
+    <p>Premium airline-style logistics connecting the U.S. to Jamaica with reliability and care.</p>
 
-      <div class="air-actions">
-        <a href="#contact" class="primary">Start Shipping</a>
-        <a href="#services" class="secondary">Explore Services</a>
-      </div>
+    <div class="hero-actions">
+      <a href="#contact" class="primary">Get a Quote</a>
+      <a href="#services" class="secondary">View Services</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="flight-path"></div>
+    <i class="fas fa-plane plane"></i>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <i class="fas fa-plane-departure"></i>
+      <h3>Air Freight</h3>
+      <p>Priority flights with strict handling standards.</p>
     </div>
 
-    <div class="air-visual">
-      <div class="plane"></div>
-      <div class="cloud c1"></div>
-      <div class="cloud c2"></div>
+    <div class="service-card">
+      <i class="fas fa-ship"></i>
+      <h3>Sea Cargo</h3>
+      <p>Reliable ocean freight for large and bulk items.</p>
     </div>
-  </section>
 
-  <!-- Services -->
-  <section id="services" class="air-section">
-    <h2>World-Class Logistics Services</h2>
-
-    <div class="air-grid">
-      <div class="air-card">✈️<h3>Air Freight</h3><p>5× weekly flights with priority handling.</p></div>
-      <div class="air-card">🚢<h3>Sea Freight</h3><p>Reliable cargo for large shipments.</p></div>
-      <div class="air-card">📦<h3>Courier</h3><p>Fast, trackable islandwide delivery.</p></div>
-      <div class="air-card">🛃<h3>Customs Support</h3><p>Clearance guidance done right.</p></div>
+    <div class="service-card">
+      <i class="fas fa-box"></i>
+      <h3>Courier Delivery</h3>
+      <p>Fast, trackable islandwide deliveries.</p>
     </div>
-  </section>
 
-  <!-- Routes -->
-  <section id="routes" class="air-section dark">
-    <h2>Our Network</h2>
-    <p>United States → Jamaica (Kingston, Montego Bay, Ocho Rios & islandwide)</p>
-    <div class="route-line"></div>
-  </section>
-
-  <!-- Rates -->
-  <section id="rates" class="air-section">
-    <h2>Transparent Pricing</h2>
-
-    <div class="rate-panel">
-      <div class="rate">$650 JMD / lb</div>
-      <small>Final cost based on weight & service level</small>
+    <div class="service-card">
+      <i class="fas fa-clipboard-check"></i>
+      <h3>Customs Support</h3>
+      <p>Guidance through clearance and documentation.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="air-section dark">
-    <h2>Ready for Takeoff?</h2>
+<section id="network" class="section dark">
+  <h2>Our Network</h2>
+  <p>United States → Jamaica (Kingston, Montego Bay, Ocho Rios)</p>
 
-    <form class="air-form">
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <textarea placeholder="What are you shipping?"></textarea>
-      <button type="submit">Request Quote</button>
-    </form>
-  </section>
+  <div class="network-line"></div>
+</section>
 
-  <!-- Footer -->
-  <footer class="air-footer">
-    © 2026 Aira Air & Logistics
-  </footer>
+<section id="rates" class="section">
+  <h2>Simple Transparent Rates</h2>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+  <div class="rate-card">
+    <span>Starting From</span>
+    <h3>$650 JMD / lb</h3>
+    <p>Final cost based on weight & service type</p>
+  </div>
+</section>
+
+<section id="contact" class="section dark">
+  <h2>Request a Quote</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea placeholder="Describe your shipment"></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
+
+<footer class="footer">
+  © 2026 Aira Air Logistics · Trusted Global Shipping
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
