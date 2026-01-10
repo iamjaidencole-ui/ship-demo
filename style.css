@@ -1,253 +1,67 @@
-/* ================= GENERAL ================= */
-* {margin:0;padding:0;box-sizing:border-box;}
-body {
-  font-family:"Poppins",sans-serif;
-  background:#f4f4f4;
-  color:#222;
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+
+body{background:#f6f9ff;color:#222;line-height:1.6}
+
+.container{width:90%;max-width:1100px;margin:auto}
+
+header{background:white;position:fixed;top:0;left:0;width:100%;z-index:999;border-bottom:1px solid #eee}
+
+.nav-wrapper{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+
+.nav ul{display:flex;gap:30px}
+.nav a{text-decoration:none;color:#333;font-weight:600}
+
+.menu-btn{display:none;font-size:28px;background:none;border:none}
+
+.mobile-menu{position:fixed;right:-100%;top:0;width:70%;height:100%;background:white;padding:40px;transition:.4s}
+.mobile-menu ul{list-style:none}
+.mobile-menu a{display:block;padding:12px 0;color:#222;text-decoration:none}
+.signup-btn{padding:10px;background:#0084ff;color:#fff;border:none;border-radius:6px;width:100%}
+
+.hero{padding:160px 0 110px;background:#081b36;color:white;text-align:left}
+.hero h1{font-size:42px}
+.hero p{margin:15px 0 20px;font-size:18px}
+.cta{padding:12px 25px;border:0;background:#0084ff;border-radius:8px;color:white;font-size:16px}
+
+.about{padding:110px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about-img img{width:100%;border-radius:14px}
+
+.services{padding:110px 0;background:white}
+.center{text-align:center}
+.service-grid{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.service-card{background:white;padding:30px;text-align:center;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,.06);transition:.3s}
+.service-card:hover{transform:translateY(-6px)}
+
+.rates{padding:110px 0}
+table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden}
+th,td{padding:16px;border-bottom:1px solid #eee;text-align:left}
+thead{background:#0084ff;color:white}
+
+.faq{padding:110px 0}
+.faq-question{width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:14px;font-weight:700;border-radius:10px}
+.faq-answer{display:none;padding:10px;background:#eef5ff;border-radius:10px;margin-top:8px}
+
+footer{padding:70px 0;background:#081b36;color:white}
+.footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+footer a{color:white;text-decoration:none}
+.copy{margin-top:25px;font-size:14px}
+
+#topBtn{
+position:fixed;right:25px;bottom:25px;padding:12px 17px;border-radius:50%;
+border:0;background:#0084ff;color:white;font-size:18px;display:none
 }
 
-.container {
-  width:90%;
-  max-width:1200px;
-  margin:auto;
-}
+/* animations */
+.fade-up{opacity:0;transform:translateY(30px);transition:1s}
+.fade-in{opacity:0;transition:1s}
 
-.section {padding:90px 0;text-align:center;}
-.section.dark {background:#0c0c0c;color:white;}
+.show{opacity:1;transform:translateY(0)}
 
-.section-title {
-  font-size:38px;
-  font-weight:800;
-  margin-bottom:10px;
-}
-
-.section-sub {opacity:.9;margin-bottom:35px;}
-
-
-/* ================= HEADER ================= */
-header {
-  background:black;
-  color:white;
-  padding:18px 0;
-  position:sticky;
-  top:0;
-  z-index:1000;
-}
-
-.header-container {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo {
-  font-size:26px;
-  font-weight:800;
-  cursor:pointer;
-}
-
-nav a {
-  margin:0 12px;
-  cursor:pointer;
-  color:white;
-  text-decoration:none;
-  font-weight:500;
-  transition:.3s;
-}
-
-nav a:hover {color:#00c8ff;}
-
-.btn-nav {
-  background:#00c8ff;
-  padding:8px 16px;
-  border-radius:6px;
-}
-
-.menu-icon {display:none;cursor:pointer;font-size:22px;}
-
-
-/* ================= HERO ================= */
-.hero {
-  height:90vh;
-  background:url("https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1600")
-  center/cover;
-  position:relative;
-  display:flex;
-  align-items:center;
-}
-
-.overlay {
-  position:absolute;
-  width:100%;height:100%;
-  background:linear-gradient(to bottom,rgba(0,0,0,.7),rgba(0,0,0,.85));
-}
-
-.hero-content {
-  position:relative;
-  color:white;
-  max-width:700px;
-}
-
-.hero h1 {font-size:48px;font-weight:900;}
-.hero p {font-size:18px;margin-top:10px;opacity:.9;}
-
-.hero-buttons {margin-top:20px;}
-
-.hero button {
-  padding:12px 20px;
-  border-radius:6px;
-  border:0;
-  cursor:pointer;
-  margin-right:8px;
-  background:#00c8ff;
-  color:white;
-  font-size:15px;
-}
-
-.hero button.secondary {background:white;color:black;}
-
-
-/* ================= GRID ================= */
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:25px;
-}
-
-.card {
-  background:white;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 7px 25px rgba(0,0,0,.1);
-  transition:.4s;
-}
-
-.card:hover {transform:translateY(-6px);}
-.card i {font-size:40px;color:#00c8ff;margin-bottom:10px;}
-
-
-/* ================= TRACK ================= */
-.track-box {margin-top:15px;}
-.track-box input {
-  padding:12px;
-  width:260px;
-  border-radius:6px;
-  border:0;
-}
-.track-box button {
-  padding:12px 18px;
-  border-radius:6px;
-  border:0;
-  background:#00c8ff;
-  color:white;
-  cursor:pointer;
-}
-
-.tracking-result {
-  margin-top:10px;
-  font-weight:700;
-}
-
-
-/* ================= RATES ================= */
-table {
-  width:85%;
-  margin:auto;
-  border-collapse:collapse;
-}
-
-th,td {
-  padding:12px;
-  border:1px solid #ddd;
-}
-
-th {background:#00c8ff;color:white;}
-
-.calculator {
-  margin-top:25px;
-}
-
-.calculator input {
-  padding:10px;
-  width:200px;
-  border-radius:6px;
-  border:0;
-}
-
-.calculator button {
-  padding:10px 16px;
-  background:#00c8ff;
-  color:white;
-  border:0;
-  border-radius:6px;
-  cursor:pointer;
-}
-
-.note {margin-top:10px;font-size:13px;opacity:.8;}
-
-
-/* ================= FAQ ================= */
-.faq-item {
-  width:80%;
-  margin:10px auto;
-  border-bottom:1px solid gray;
-}
-
-.faq-item h3 {
-  cursor:pointer;
-  display:flex;
-  justify-content:space-between;
-}
-
-.faq-item p {
-  display:none;
-  margin:8px 0;
-}
-
-
-/* ================= CONTACT ================= */
-.contact-box {margin-top:20px;font-size:18px;}
-.contact-box i {color:#00c8ff;margin-right:6px;}
-
-
-/* ================= FOOTER ================= */
-footer {
-  background:black;
-  color:white;
-  text-align:center;
-  padding:15px 0;
-}
-
-
-/* ================= ANIMATIONS ================= */
-.animate-up {
-  opacity:0;
-  transform:translateY(40px);
-  animation:up .9s forwards;
-}
-
-.delay {animation-delay:.2s;}
-.delay2 {animation-delay:.4s;}
-
-@keyframes up {
-  to {opacity:1;transform:translateY(0);}
-}
-
-.reveal {
-  opacity:0;
-  transform:translateY(40px);
-  transition:.8s;
-}
-
-.reveal.visible {
-  opacity:1;
-  transform:translateY(0);
-}
-
-
-/* ================= MOBILE ================= */
-@media(max-width:880px){
-  nav {display:none;flex-direction:column;background:black;padding:20px;}
-  nav a {margin:10px 0;}
-  .menu-icon {display:block;}
+/* Responsive */
+@media(max-width:900px){
+  .service-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
+  .nav{display:none}
+  .menu-btn{display:block}
 }
