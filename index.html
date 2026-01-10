@@ -1,194 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Aira Freight — Fast & Reliable Logistics</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aira Freight | Fast Shipping to Jamaica</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <div class="container nav-wrapper">
-    <div class="logo">
-      <img src="https://via.placeholder.com/140x40?text=Aira+Freight+Logo" alt="Logo">
-    </div>
+    <div class="logo">AIRA FREIGHT</div>
 
     <nav class="nav">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#rates">Rates</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#rates">Rates</a>
+        <a href="#faq">FAQ</a>
+        <a href="#" class="btn">Sign Up</a>
     </nav>
 
-    <button class="menu-btn" id="menuBtn">☰</button>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="#home" class="m-link">Home</a></li>
-      <li><a href="#about" class="m-link">About</a></li>
-      <li><a href="#services" class="m-link">Services</a></li>
-      <li><a href="#rates" class="m-link">Rates</a></li>
-      <li><a href="#faq" class="m-link">FAQ</a></li>
-      <li><button class="signup-btn">Sign Up</button></li>
-    </ul>
-  </div>
-
+    <div class="menu-btn" onclick="openMenu()">☰</div>
 </header>
 
-<!-- HERO SECTION -->
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+    <a href="#home" onclick="closeMenu()">Home</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#rates" onclick="closeMenu()">Rates</a>
+    <a href="#faq" onclick="closeMenu()">FAQ</a>
+    <a href="#" class="btn">Sign Up</a>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<!-- HERO -->
 <section class="hero" id="home">
-  <div class="container">
-    <h1 class="fade-up">Fast, Secure & Reliable Shipping</h1>
-    <p class="fade-up">We move your packages from the U.S. to Jamaica with unmatched speed, transparency, and care.</p>
-    <button class="cta fade-up">Sign Up</button>
-  </div>
+    <div>
+        <h1>Fast, Reliable U.S. to Jamaica Shipping</h1>
+        <p>Affordable rates, trusted service, and seamless delivery right across Jamaica.</p>
+        <a href="#" class="btn">Sign Up Today</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1603344797033-6d9b0b6f9a3c"
+         class="hero-img">
 </section>
 
-<!-- ABOUT SECTION -->
-<section class="about" id="about">
-  <div class="container about-grid">
-    <div class="about-content fade-in">
-      <h2>About Aira Freight</h2>
-      <p>
-        Aira Freight delivers premium air freight and courier services built on speed, trust, and efficiency.
-        Customers enjoy reliable weekly flights, secure handling, and transparent tracking — backed by a dedicated support team.
-      </p>
-      <p>
-        Whether personal packages or business shipments, we ensure smooth logistics every step of the journey.
-      </p>
-    </div>
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>About Aira Freight</h2>
+    <p>We make shipping simple. Get reliable delivery, clear communication, and great pricing with every shipment.</p>
 
-    <div class="about-img fade-in">
-      <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="About Image">
-    </div>
-  </div>
+    <img class="about-img"
+         src="https://images.unsplash.com/photo-1529070538774-1843cb3265df">
 </section>
 
 <!-- SERVICES -->
-<section class="services" id="services">
-  <div class="container">
-    <h2 class="center fade-in">Our Services</h2>
+<section class="section" id="services">
+    <h2>Our Services</h2>
 
-    <div class="service-grid">
+    <div class="services">
 
-      <div class="service-card fade-in">
-        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#0084ff" stroke-width="2">
-          <path d="M2 3h20v13H2z"/>
-          <path d="M6 21h12"/>
-          <path d="M9 16v5"/>
-          <path d="M15 16v5"/>
-        </svg>
-        <h3>Air Freight</h3>
-        <p>Fast weekly flights from the U.S. direct to Jamaica with priority handling.</p>
-      </div>
+        <div class="service-box">
+            <div class="service-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24"><path d="M3 3h18v13H3z"/><path d="M3 16l3 5h12l3-5"/></svg>
+            </div>
+            <h4>Air Freight</h4>
+            <p>Frequent flights ensuring fast delivery.</p>
+        </div>
 
-      <div class="service-card fade-in">
-        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#0084ff" stroke-width="2">
-          <path d="M3 7l9-4 9 4v10l-9 4-9-4z"/>
-          <path d="M3 7l9 5 9-5"/>
-        </svg>
-        <h3>Package Handling</h3>
-        <p>Secure & careful processing to protect your shipments from start to finish.</p>
-      </div>
+        <div class="service-box">
+            <div class="service-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24"><path d="M3 7h18M6 7v13m12-13v13M9 7V4h6v3"/></svg>
+            </div>
+            <h4>Package Consolidation</h4>
+            <p>Save more by combining shipments.</p>
+        </div>
 
-      <div class="service-card fade-in">
-        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#0084ff" stroke-width="2">
-          <path d="M3 12h18"/>
-          <path d="M5 12l-2 4h18l-2-4"/>
-          <circle cx="7" cy="18" r="2"/>
-          <circle cx="17" cy="18" r="2"/>
-        </svg>
-        <h3>Island Delivery</h3>
-        <p>Kingston, Ocho Rios, St. Ann and islandwide partner delivery options.</p>
-      </div>
+        <div class="service-box">
+            <div class="service-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h4>24/7 Tracking</h4>
+            <p>Real-time tracking from warehouse to delivery.</p>
+        </div>
 
     </div>
-  </div>
 </section>
 
 <!-- RATES -->
-<section class="rates" id="rates">
-  <div class="container">
-    <h2 class="center fade-in">Shipping Rates (JMD)</h2>
+<section class="section rates" id="rates">
+<h2>Rates (JMD)</h2>
+<p>Simple pricing. No surprises.</p>
 
-    <table class="fade-in">
-      <thead>
-        <tr>
-          <th>Weight Range</th>
-          <th>Rate (JMD)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>0.5 lb – 1 lb</td><td>$1,200</td></tr>
-        <tr><td>2 lb – 5 lb</td><td>$3,500</td></tr>
-        <tr><td>6 lb – 10 lb</td><td>$6,000</td></tr>
-        <tr><td>11 lb – 20 lb</td><td>$10,500</td></tr>
-        <tr><td>21 lb+</td><td>Contact Support</td></tr>
-      </tbody>
-    </table>
-  </div>
+<table>
+<thead>
+<tr>
+<th scope="col">Weight (lb)</th>
+<th scope="col">Rate (JMD)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>1</td><td>$650</td></tr>
+<tr><td>2</td><td>$900</td></tr>
+<tr><td>3</td><td>$1,150</td></tr>
+<tr><td>4</td><td>$1,400</td></tr>
+<tr><td>5</td><td>$1,650</td></tr>
+<tr><td>6</td><td>$1,900</td></tr>
+<tr><td>7</td><td>$2,150</td></tr>
+<tr><td>8</td><td>$2,400</td></tr>
+<tr><td>9</td><td>$2,650</td></tr>
+<tr><td>10</td><td>$2,900</td></tr>
+<tr><td>11</td><td>$3,150</td></tr>
+<tr><td>12</td><td>$3,400</td></tr>
+<tr><td>13</td><td>$3,650</td></tr>
+<tr><td>14</td><td>$3,900</td></tr>
+<tr><td>15</td><td>$4,150</td></tr>
+<tr><td>16</td><td>$4,400</td></tr>
+<tr><td>17</td><td>$4,650</td></tr>
+<tr><td>18</td><td>$4,900</td></tr>
+<tr><td>19</td><td>$5,150</td></tr>
+<tr><td>20</td><td>$5,400</td></tr>
+</tbody>
+</table>
+
+<p class="rate-note">* Packages round up to next tier if weight is not shown.</p>
 </section>
 
 <!-- FAQ -->
-<section class="faq" id="faq">
-  <div class="container">
-    <h2 class="center fade-in">Frequently Asked Questions</h2>
+<section class="section" id="faq">
+<h2>Frequently Asked Questions</h2>
 
-    <div class="faq-item fade-in">
-      <button class="faq-question">How long does shipping take?</button>
-      <div class="faq-answer">Typically 3–7 business days from flight arrival.</div>
-    </div>
+<div class="faq-item" onclick="toggleFaq(this)">
+<h4>How long does shipping take?</h4>
+<p class="faq-content">Typically 5–7 business days after warehouse arrival.</p>
+</div>
 
-    <div class="faq-item fade-in">
-      <button class="faq-question">Do you offer delivery?</button>
-      <div class="faq-answer">Yes! We deliver Kingston, St. Ann, Ocho Rios and islandwide partners.</div>
-    </div>
+<div class="faq-item" onclick="toggleFaq(this)">
+<h4>Do you offer delivery?</h4>
+<p class="faq-content">Yes, pickup and islandwide delivery available.</p>
+</div>
 
-    <div class="faq-item fade-in">
-      <button class="faq-question">How do I get started?</button>
-      <div class="faq-answer">Simply click “Sign Up” and create your customer account.</div>
-    </div>
+<div class="faq-item" onclick="toggleFaq(this)">
+<h4>Are there extra fees?</h4>
+<p class="faq-content">Only customs if applicable.</p>
+</div>
 
-  </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="container footer-grid">
-    <div>
-      <h3>Aira Freight</h3>
-      <p>Reliable Logistics. Professional Service.</p>
-    </div>
+<h3>Aira Freight</h3>
+<p>Fast. Reliable. Secure shipping.</p>
 
-    <div>
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#rates">Rates</a></li>
-        <li><a href="#services">Services</a></li>
-      </ul>
-    </div>
+<div class="footer-links">
+<h3>Quick Links</h3>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#rates">Rates</a>
+<a href="#faq">FAQ</a>
+</div>
 
-    <div>
-      <h4>Support</h4>
-      <ul>
-        <li>Customer Service</li>
-        <li>Help Centre</li>
-      </ul>
-    </div>
-  </div>
-
-  <p class="center copy">© 2026 Aira Freight. All Rights Reserved.</p>
+<p class="copy">© 2026 Aira Freight. All Rights Reserved.</p>
 </footer>
 
-<button id="topBtn">↑</button>
+<button id="topBtn" onclick="scrollToTop()">Top</button>
 
 <script src="script.js"></script>
 </body>
