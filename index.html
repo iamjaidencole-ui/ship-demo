@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aira – Shipping Template</title>
+<title>Aira Shipper Template</title>
 
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- Icons -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -16,7 +16,9 @@
 <body>
 
 <header>
-  <div class="logo">Aira</div>
+  <div class="logo">
+    <img src="https://via.placeholder.com/120x40?text=AIRA" alt="Aira Logo">
+  </div>
 
   <nav class="nav">
     <a href="#home">Home</a>
@@ -27,91 +29,95 @@
     <a href="#" class="btn">Sign Up</a>
   </nav>
 
-  <div class="menu-btn" onclick="openMenu()">
-    <i class="fa-solid fa-bars"></i>
+  <div class="menu-btn" id="menuBtn">
+    <i class="fas fa-bars"></i>
   </div>
 </header>
 
 <div class="mobile-nav" id="mobileNav">
-  <a href="#home" onclick="closeMenu()">Home</a>
-  <a href="#about" onclick="closeMenu()">About</a>
-  <a href="#services" onclick="closeMenu()">Services</a>
-  <a href="#rates" onclick="closeMenu()">Rates</a>
-  <a href="#faq" onclick="closeMenu()">FAQ</a>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#rates">Rates</a>
+  <a href="#faq">FAQ</a>
   <a href="#" class="btn">Sign Up</a>
 </div>
-<div class="overlay" id="overlay" onclick="closeMenu()"></div>
 
-<!-- HERO -->
+<div class="overlay" id="overlay"></div>
+
+<!-- Hero -->
 <section class="hero" id="home">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1>Fast & Reliable Shipping</h1>
-    <p>A clean, flexible shipping template you can customize for any courier business.</p>
+    <h1>Fast & Reliable International Shipping</h1>
+    <p>A clean logistics template designed for courier and freight companies.</p>
     <a href="#" class="btn">Get Started</a>
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- About -->
 <section class="section" id="about">
-  <h2>About Aira</h2>
-  <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1" class="about-img">
+  <h2>About Our Company</h2>
+  <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d" class="about-img">
   <p>
-    This is placeholder text for your shipping company description.  
-    Replace it with details about your service, mission, or experience.
+    This template is designed to showcase shipping, logistics, and courier services
+    with a modern, professional layout that’s easy to customize.
   </p>
 </section>
 
-<!-- SERVICES -->
-<section class="section light" id="services">
+<!-- Services -->
+<section class="section" id="services">
 <h2>Our Services</h2>
 
 <div class="services">
   <div class="service-box">
-    <i class="fa-solid fa-plane"></i>
+    <i class="fas fa-plane"></i>
     <h4>Air Freight</h4>
-    <p>Lorem ipsum placeholder text for service description.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 
   <div class="service-box">
-    <i class="fa-solid fa-ship"></i>
-    <h4>Ocean Freight</h4>
-    <p>Lorem ipsum placeholder text for service description.</p>
+    <i class="fas fa-ship"></i>
+    <h4>Sea Freight</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 
   <div class="service-box">
-    <i class="fa-solid fa-truck"></i>
-    <h4>Ground Transport</h4>
-    <p>Lorem ipsum placeholder text for service description.</p>
+    <i class="fas fa-box"></i>
+    <h4>Package Forwarding</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 
   <div class="service-box">
-    <i class="fa-solid fa-warehouse"></i>
+    <i class="fas fa-truck"></i>
+    <h4>Local Delivery</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+
+  <div class="service-box">
+    <i class="fas fa-warehouse"></i>
     <h4>Warehousing</h4>
-    <p>Lorem ipsum placeholder text for service description.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 
   <div class="service-box">
-    <i class="fa-solid fa-box"></i>
-    <h4>Package Consolidation</h4>
-    <p>Lorem ipsum placeholder text for service description.</p>
-  </div>
-
-  <div class="service-box">
-    <i class="fa-solid fa-location-dot"></i>
-    <h4>Shipment Tracking</h4>
-    <p>Lorem ipsum placeholder text for service description.</p>
+    <i class="fas fa-globe"></i>
+    <h4>International Shipping</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 </div>
 </section>
 
-<!-- RATES -->
+<!-- Rates -->
 <section class="section rates" id="rates">
-<h2>Rates</h2>
+<h2>Shipping Rates</h2>
 
 <table>
 <thead>
-<tr><th>Weight (lb)</th><th>Rate</th></tr>
+<tr>
+  <th>Weight (lb)</th>
+  <th>Rate</th>
+</tr>
 </thead>
 <tbody>
 <tr><td>1</td><td>$650</td></tr>
@@ -121,48 +127,52 @@
 <tr><td>20</td><td>$5,400</td></tr>
 </tbody>
 </table>
+
+<p class="note">*Rates shown are examples and can be customized.</p>
 </section>
 
 <!-- FAQ -->
 <section class="section" id="faq">
 <h2>Frequently Asked Questions</h2>
 
-<div class="faq-item" onclick="toggleFaq(this)">
-  <div class="faq-question">
-    <span>How long does shipping take?</span>
-    <i class="fa-solid fa-chevron-down"></i>
-  </div>
+<div class="faq-item">
+  <button class="faq-question">
+    How long does shipping take?
+    <i class="fas fa-chevron-down"></i>
+  </button>
   <div class="faq-answer">
-    Shipping times vary based on destination and service type.
+    Shipping times vary depending on service type and destination.
   </div>
 </div>
 
-<div class="faq-item" onclick="toggleFaq(this)">
-  <div class="faq-question">
-    <span>Do you offer delivery?</span>
-    <i class="fa-solid fa-chevron-down"></i>
-  </div>
+<div class="faq-item">
+  <button class="faq-question">
+    Do you offer home delivery?
+    <i class="fas fa-chevron-down"></i>
+  </button>
   <div class="faq-answer">
-    Delivery options depend on location and service availability.
+    Yes, home and pickup delivery options are available.
   </div>
 </div>
 
-<div class="faq-item" onclick="toggleFaq(this)">
-  <div class="faq-question">
-    <span>Are customs fees included?</span>
-    <i class="fa-solid fa-chevron-down"></i>
-  </div>
+<div class="faq-item">
+  <button class="faq-question">
+    Are customs fees included?
+    <i class="fas fa-chevron-down"></i>
+  </button>
   <div class="faq-answer">
-    Customs charges are not included unless stated otherwise.
+    Customs charges may apply depending on the shipment.
   </div>
 </div>
 </section>
 
 <footer>
-<p>© 2026 Aira. Shipping Template.</p>
+<p>© 2026 Aira Shipping Template. All Rights Reserved.</p>
 </footer>
 
-<button id="topBtn" onclick="scrollToTop()">Back to top</button>
+<button id="topBtn">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
 <script src="script.js"></script>
 </body>
