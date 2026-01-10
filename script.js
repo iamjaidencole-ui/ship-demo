@@ -1,22 +1,33 @@
-function openMenu() {
-  mobileNav.classList.add('open');
-  overlay.classList.add('show');
-}
+const menuBtn = document.getElementById("menuBtn");
+const mobileNav = document.getElementById("mobileNav");
+const overlay = document.getElementById("overlay");
 
-function closeMenu() {
-  mobileNav.classList.remove('open');
-  overlay.classList.remove('show');
-}
-
-function toggleFaq(item) {
-  const answer = item.querySelector('.faq-answer');
-  answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-}
-
-window.onscroll = () => {
-  topBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+menuBtn.onclick = () => {
+  mobileNav.classList.add("active");
+  overlay.style.display = "block";
 };
 
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+overlay.onclick = closeMenu;
+
+function closeMenu() {
+  mobileNav.classList.remove("active");
+  overlay.style.display = "none";
 }
+
+// FAQ
+document.querySelectorAll(".faq-question").forEach(q => {
+  q.addEventListener("click", () => {
+    q.parentElement.classList.toggle("active");
+  });
+});
+
+// Scroll to top
+const topBtn = document.getElementById("topBtn");
+
+window.onscroll = () => {
+  topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+};
+
+topBtn.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
