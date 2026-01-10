@@ -1,45 +1,23 @@
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
+function openMenu(){
+document.getElementById("mobileNav").style.right="0";
+document.getElementById("overlay").style.display="block";
+}
 
-menuBtn.onclick = () => {
-  mobileMenu.style.right = "0";
-};
+function closeMenu(){
+document.getElementById("mobileNav").style.right="-100%";
+document.getElementById("overlay").style.display="none";
+}
 
-document.addEventListener("click", (e) => {
-  if (!mobileMenu.contains(e.target) && e.target !== menuBtn) {
-    mobileMenu.style.right = "-100%";
-  }
-});
+function toggleFaq(el){
+let content = el.querySelector(".faq-content");
+content.style.display = content.style.display==="block" ? "none" : "block";
+}
 
-document.querySelectorAll(".m-link").forEach(link=>{
-  link.onclick=()=> mobileMenu.style.right="-100%";
-});
+window.onscroll=function(){
+let btn=document.getElementById("topBtn");
+btn.style.display=window.scrollY>400?"block":"none";
+}
 
-// FAQ
-document.querySelectorAll(".faq-question").forEach(btn=>{
-  btn.addEventListener("click", ()=>{
-    const ans = btn.nextElementSibling;
-    ans.style.display = ans.style.display === "block" ? "none" : "block";
-  });
-});
-
-// Scroll animations
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add("show");
-    }
-  });
-},{threshold:0.2});
-
-document.querySelectorAll(".fade-up, .fade-in").forEach(el=>observer.observe(el));
-
-// Scroll To Top
-const topBtn = document.getElementById("topBtn");
-
-window.onscroll = () =>{
-  if(window.scrollY > 400) topBtn.style.display="block";
-  else topBtn.style.display="none";
-};
-
-topBtn.onclick = ()=> window.scrollTo({top:0,behavior:"smooth"});
+function scrollToTop(){
+window.scrollTo({top:0,behavior:"smooth"});
+}
