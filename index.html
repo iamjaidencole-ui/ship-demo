@@ -3,14 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aira Demo Shipper - Courier Service</title>
+<title>Aira Demo Shipper – Courier Service</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Header -->
 <header>
-  <div class="logo">Aira Demo Shipper</div>
+  <div class="logo">Aira <span>Demo Shipper</span></div>
+
   <nav class="nav">
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -19,7 +29,10 @@
     <a href="#faq">FAQ</a>
     <a href="#" class="btn">Sign Up</a>
   </nav>
-  <div class="menu-btn" onclick="openMenu()">☰</div>
+
+  <div class="menu-btn" onclick="openMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
 </header>
 
 <div class="mobile-nav" id="mobileNav">
@@ -34,78 +47,63 @@
 
 <!-- Hero -->
 <section class="hero" id="home">
-  <div>
+  <div class="hero-text">
     <h1>Fast, Reliable U.S. to Jamaica Shipping</h1>
     <p>Affordable rates, trusted service, and seamless delivery across Jamaica.</p>
     <a href="#" class="btn">Sign Up Today</a>
   </div>
-  <img src="https://images.unsplash.com/photo-1603344797033-6d9b0b6f9a3c" class="hero-img">
+  <i class="fa-solid fa-plane-departure hero-icon"></i>
 </section>
 
 <!-- About -->
 <section class="section" id="about">
   <h2>About Aira Demo Shipper</h2>
-  <p>We make shipping simple. Get reliable delivery, clear communication, and great pricing with every shipment.</p>
-  <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" class="about-img">
+  <p>
+    We make shipping simple. Reliable delivery, clear communication, and great pricing —
+    every shipment, every time.
+  </p>
 </section>
 
 <!-- Services -->
 <section class="section" id="services">
 <h2>Our Services</h2>
+
 <div class="services">
 
   <div class="service-box">
-    <div class="service-icon">
-      <!-- Plane icon -->
-      <svg viewBox="0 0 64 64"><path d="M2 32 L62 32 M32 2 L32 62" stroke="#0078ff" stroke-width="4" stroke-linecap="round"/></svg>
-    </div>
+    <i class="fa-solid fa-plane service-icon"></i>
     <h4>Freight Forwarding</h4>
-    <p>Fast, reliable shipping with multiple weekly air and sea freights.</p>
+    <p>Fast air and sea shipping with multiple weekly departures.</p>
   </div>
 
   <div class="service-box">
-    <div class="service-icon">
-      <!-- Shopping cart icon -->
-      <svg viewBox="0 0 64 64"><path d="M10 50 L20 20 L50 20 L60 50 Z" stroke="#0078ff" stroke-width="4" fill="none"/></svg>
-    </div>
+    <i class="fa-solid fa-cart-shopping service-icon"></i>
     <h4>We Shop For You</h4>
-    <p>No credit card? We handle checkout and purchase for you online.</p>
+    <p>No credit card? We purchase items online on your behalf.</p>
   </div>
 
   <div class="service-box">
-    <div class="service-icon">
-      <!-- Package icon -->
-      <svg viewBox="0 0 64 64"><rect x="12" y="12" width="40" height="40" stroke="#0078ff" stroke-width="4" fill="none"/><path d="M12 12 L52 52" stroke="#0078ff" stroke-width="4"/></svg>
-    </div>
+    <i class="fa-solid fa-location-dot service-icon"></i>
     <h4>Live Tracking</h4>
-    <p>Real-time updates from warehouse to your door.</p>
+    <p>Real-time updates from warehouse to delivery.</p>
   </div>
 
   <div class="service-box">
-    <div class="service-icon">
-      <!-- Home icon -->
-      <svg viewBox="0 0 64 64"><path d="M8 48 L56 48 L32 16 Z" stroke="#0078ff" stroke-width="4" fill="none"/></svg>
-    </div>
+    <i class="fa-solid fa-house service-icon"></i>
     <h4>Home Delivery</h4>
-    <p>We deliver to your door in selected areas.</p>
+    <p>Doorstep delivery available in select areas.</p>
   </div>
 
   <div class="service-box">
-    <div class="service-icon">
-      <!-- Tax/Document icon -->
-      <svg viewBox="0 0 64 64"><rect x="14" y="10" width="36" height="44" stroke="#0078ff" stroke-width="4" fill="none"/><line x1="14" y1="22" x2="50" y2="22" stroke="#0078ff" stroke-width="4"/></svg>
-    </div>
+    <i class="fa-solid fa-file-invoice-dollar service-icon"></i>
     <h4>Tax-Free Address</h4>
-    <p>Shop online with a Florida tax-exemption address and save.</p>
+    <p>Florida address with tax exemption to save more.</p>
   </div>
 
   <div class="service-box">
-    <div class="service-icon">
-      <!-- People/Group icon -->
-      <svg viewBox="0 0 64 64"><circle cx="20" cy="20" r="8" stroke="#0078ff" stroke-width="4" fill="none"/><circle cx="44" cy="20" r="8" stroke="#0078ff" stroke-width="4" fill="none"/><path d="M8 44 C20 36,44 36,56 44" stroke="#0078ff" stroke-width="4" fill="none"/></svg>
-    </div>
-    <h4>Friends & Family Forwarding</h4>
-    <p>Forward packages from relatives overseas to Jamaica easily.</p>
+    <i class="fa-solid fa-people-group service-icon"></i>
+    <h4>Friends & Family</h4>
+    <p>Forward packages from relatives overseas easily.</p>
   </div>
 
 </div>
@@ -114,6 +112,8 @@
 <!-- Rates -->
 <section class="section rates" id="rates">
 <h2>Rates (JMD)</h2>
+
+<div class="table-wrap">
 <table>
 <thead>
 <tr><th>Weight (lb)</th><th>Rate (JMD)</th></tr>
@@ -124,40 +124,33 @@
 <tr><td>3</td><td>1150</td></tr>
 <tr><td>4</td><td>1400</td></tr>
 <tr><td>5</td><td>1650</td></tr>
-<tr><td>6</td><td>1900</td></tr>
-<tr><td>7</td><td>2150</td></tr>
-<tr><td>8</td><td>2400</td></tr>
-<tr><td>9</td><td>2650</td></tr>
 <tr><td>10</td><td>2900</td></tr>
-<tr><td>11</td><td>3150</td></tr>
-<tr><td>12</td><td>3400</td></tr>
-<tr><td>13</td><td>3650</td></tr>
-<tr><td>14</td><td>3900</td></tr>
 <tr><td>15</td><td>4150</td></tr>
-<tr><td>16</td><td>4400</td></tr>
-<tr><td>17</td><td>4650</td></tr>
-<tr><td>18</td><td>4900</td></tr>
-<tr><td>19</td><td>5150</td></tr>
 <tr><td>20</td><td>5400</td></tr>
 </tbody>
 </table>
-<p>*Packages round up to next tier if weight is not shown.</p>
+</div>
+
+<p class="note">*Packages round up to the next tier.</p>
 </section>
 
 <!-- FAQ -->
 <section class="section" id="faq">
 <h2>FAQ</h2>
+
 <div class="faq-item" onclick="toggleFaq(this)">
 <h4>How long does shipping take?</h4>
 <p class="faq-content">Typically 5–7 business days after warehouse arrival.</p>
 </div>
+
 <div class="faq-item" onclick="toggleFaq(this)">
 <h4>Do you offer delivery?</h4>
-<p class="faq-content">Yes, pickup and islandwide delivery available.</p>
+<p class="faq-content">Yes, pickup and islandwide delivery options are available.</p>
 </div>
+
 <div class="faq-item" onclick="toggleFaq(this)">
 <h4>Are there extra fees?</h4>
-<p class="faq-content">Only customs if applicable.</p>
+<p class="faq-content">Only customs duties if applicable.</p>
 </div>
 </section>
 
@@ -174,7 +167,9 @@
 <p>© 2026 Aira Demo Shipper. All Rights Reserved.</p>
 </footer>
 
-<button id="topBtn" onclick="scrollToTop()">Top</button>
+<button id="topBtn" onclick="scrollToTop()">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
 
 <script src="script.js"></script>
 </body>
