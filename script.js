@@ -1,20 +1,20 @@
 function openMenu() {
-  document.getElementById('mobileNav').classList.add('open');
-  document.getElementById('overlay').classList.add('show');
+  mobileNav.classList.add('open');
+  overlay.classList.add('show');
 }
 
 function closeMenu() {
-  document.getElementById('mobileNav').classList.remove('open');
-  document.getElementById('overlay').classList.remove('show');
+  mobileNav.classList.remove('open');
+  overlay.classList.remove('show');
 }
 
 function toggleFaq(item) {
-  item.querySelector('.faq-content').classList.toggle('show');
+  const answer = item.querySelector('.faq-answer');
+  answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
 }
 
 window.onscroll = () => {
-  document.getElementById('topBtn').style.display =
-    window.scrollY > 300 ? 'block' : 'none';
+  topBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
 };
 
 function scrollToTop() {
