@@ -18,11 +18,15 @@ function closeMenu(){
   overlay.style.display = "none";
 }
 
-// ===== FAQ Toggle =====
+// ===== FAQ Toggle Smooth Slide =====
 document.querySelectorAll(".faq-question").forEach(btn => {
   btn.onclick = () => {
     let ans = btn.nextElementSibling;
-    ans.style.display = ans.style.display === "block" ? "none" : "block";
+    if(ans.style.display === "block"){
+      ans.style.display = "none";
+    } else {
+      ans.style.display = "block";
+    }
   };
 });
 
@@ -33,15 +37,23 @@ window.addEventListener("scroll", () => {
 });
 topBtn.onclick = () => window.scrollTo({top:0,behavior:"smooth"});
 
-// ===== Scroll Reveal =====
+// ===== Scroll Reveal with Stagger =====
 const revealElements = document.querySelectorAll(".reveal");
 function reveal(){
-  revealElements.forEach(el => {
+  revealElements.forEach((el,index) => {
     const top = el.getBoundingClientRect().top;
+    const delay = el.dataset.delay || 0;
     if(top < window.innerHeight - 100){
-      el.classList.add("show");
+      setTimeout(() => el.classList.add("show"), delay*300);
     }
   });
 }
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+// ===== Hero Parallax =====
+const hero = document.querySelector(".hero");
+window.addEventListener("scroll", () => {
+  const offset = window.scrollY * 0.3;
+  hero.style.backgroundPositionY = `${offset}px`;
+});
