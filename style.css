@@ -75,7 +75,7 @@ header{
 }
 .rates td{padding:14px;border-bottom:1px solid #ddd;border-right:1px solid #ddd;text-align:center;font-size:14px;}
 .rates td:last-child{border-right:none;}
-.rates tbody tr:nth-child(even){background:#f1f1f1;}
+.rates tbody tr:nth-child(even){background:#e6f0ff;}
 .rates tbody tr:hover{background:#e6f0ff;}
 .note{text-align:center;margin-top:12px;color:#777;font-size:13px;}
 
