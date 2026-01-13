@@ -5,10 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aira Demo Shipper</title>
 
-<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- Icons -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
@@ -17,16 +14,16 @@
 
 <header>
   <div class="logo">
-    <img src="https://via.placeholder.com/140x45?text=AIRA" alt="Aira Logo">
+    <img src="https://aira.courier101.com/assets/logo.png" alt="Aira Logo">
   </div>
 
   <nav class="nav" id="desktopNav">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#rates">Rates</a>
-    <a href="#faq">FAQ</a>
-    <a href="#" class="btn">Sign Up</a>
+    <a class="nav-btn" href="#home">Home</a>
+    <a class="nav-btn" href="#about">About</a>
+    <a class="nav-btn" href="#services">Services</a>
+    <a class="nav-btn" href="#rates">Rates</a>
+    <a class="nav-btn" href="#faq">FAQ</a>
+    <a href="https://aira.courier101.com" class="nav-btn primary">Sign Up</a>
   </nav>
 
   <div class="menu-btn" id="menuBtn">
@@ -40,86 +37,49 @@
   <a href="#services">Services</a>
   <a href="#rates">Rates</a>
   <a href="#faq">FAQ</a>
-  <a href="#" class="btn">Sign Up</a>
+  <a href="https://aira.courier101.com" class="primary">Sign Up</a>
 </div>
 
 <div class="overlay" id="overlay"></div>
 
-<!-- Hero -->
 <section class="hero" id="home">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1>Fast & Reliable International Shipping</h1>
-    <p>A premium, modern logistics template built for courier companies.</p>
-    <a href="#" class="btn big-btn">Get Started</a>
+    <h1>Smarter Shipping. Faster Delivery.</h1>
+    <p>Professional, reliable logistics solutions designed for real customers.</p>
+    <a href="https://aira.courier101.com" class="btn">Create Account</a>
   </div>
 </section>
 
-<!-- About -->
 <section class="section" id="about">
-  <h2>About Our Company</h2>
+  <h2>About Aira</h2>
   <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d" class="about-img">
   <p>
-    Aira provides efficient shipping, package forwarding, warehousing,
-    and last-mile logistics solutions for customers worldwide.
+    We provide international shipping, package forwarding, warehousing, and last-mile delivery
+    with a strong focus on efficiency, transparency, and customer care.
   </p>
 </section>
 
-<!-- Services -->
 <section class="section" id="services">
 <h2>Our Services</h2>
 
 <div class="services">
-  <div class="service-box">
-    <i class="fas fa-plane"></i>
-    <h4>Air Freight</h4>
-    <p>Fast cargo movement worldwide.</p>
-  </div>
-
-  <div class="service-box">
-    <i class="fas fa-ship"></i>
-    <h4>Sea Freight</h4>
-    <p>Affordable bulk transport.</p>
-  </div>
-
-  <div class="service-box">
-    <i class="fas fa-box"></i>
-    <h4>Package Forwarding</h4>
-    <p>Shop anywhere, ship anywhere.</p>
-  </div>
-
-  <div class="service-box">
-    <i class="fas fa-truck"></i>
-    <h4>Local Delivery</h4>
-    <p>Reliable last-mile delivery.</p>
-  </div>
-
-  <div class="service-box">
-    <i class="fas fa-warehouse"></i>
-    <h4>Warehousing</h4>
-    <p>Secure storage & handling.</p>
-  </div>
-
-  <div class="service-box">
-    <i class="fas fa-globe"></i>
-    <h4>Global Shipping</h4>
-    <p>International logistics network.</p>
-  </div>
+  <div class="service-box"><i class="fas fa-plane"></i><h4>Air Freight</h4></div>
+  <div class="service-box"><i class="fas fa-ship"></i><h4>Sea Freight</h4></div>
+  <div class="service-box"><i class="fas fa-box"></i><h4>Package Forwarding</h4></div>
+  <div class="service-box"><i class="fas fa-truck"></i><h4>Local Delivery</h4></div>
+  <div class="service-box"><i class="fas fa-warehouse"></i><h4>Warehousing</h4></div>
+  <div class="service-box"><i class="fas fa-globe"></i><h4>Global Shipping</h4></div>
 </div>
 </section>
 
-<!-- Rates -->
 <section class="section rates" id="rates">
 <h2>Shipping Rates</h2>
 
 <table>
 <thead>
-<tr>
-  <th>Weight (lb)</th>
-  <th>Rate (JMD)</th>
-</tr>
+<tr><th>Weight (lb)</th><th>Rate (JMD)</th></tr>
 </thead>
-
 <tbody>
 <tr><td>1</td><td>$650</td></tr>
 <tr><td>2</td><td>$950</td></tr>
@@ -128,55 +88,38 @@
 <tr><td>5</td><td>$1,650</td></tr>
 <tr><td>10</td><td>$2,900</td></tr>
 <tr><td>15</td><td>$4,150</td></tr>
-<tr><td>16</td><td>$4,500</td></tr>
 <tr><td>20</td><td>$5,400</td></tr>
 </tbody>
 </table>
 
-<p class="note">*Rates are examples and can be customized.</p>
+<p class="note">*Rates shown are examples and fully customizable.</p>
 </section>
 
-<!-- FAQ -->
 <section class="section" id="faq">
 <h2>Frequently Asked Questions</h2>
 
 <div class="faq-item">
-  <button class="faq-question">
-    How long does shipping take?
-    <i class="fas fa-chevron-down"></i>
-  </button>
-  <div class="faq-answer">
-    Delivery time depends on service type and destination.
-  </div>
+  <button class="faq-question">How long does shipping take?<i class="fas fa-chevron-down"></i></button>
+  <div class="faq-answer">Delivery time varies based on destination & service level.</div>
 </div>
 
 <div class="faq-item">
-  <button class="faq-question">
-    Do you offer delivery to my home?
-    <i class="fas fa-chevron-down"></i>
-  </button>
-  <div class="faq-answer">
-    Yes! We provide both pickup and home delivery.
-  </div>
+  <button class="faq-question">Do you offer home delivery?<i class="fas fa-chevron-down"></i></button>
+  <div class="faq-answer">Yes — we provide both pickup & home delivery.</div>
 </div>
 
 <div class="faq-item">
-  <button class="faq-question">
-    Are customs fees included?
-    <i class="fas fa-chevron-down"></i>
-  </button>
-  <div class="faq-answer">
-    Customs fees may apply depending on the shipment.
-  </div>
+  <button class="faq-question">Are customs fees included?<i class="fas fa-chevron-down"></i></button>
+  <div class="faq-answer">Customs charges may apply depending on your shipment.</div>
 </div>
 </section>
 
 <footer>
-<p>© 2026 Aira Shipping Template. All Rights Reserved.</p>
+<p>© 2026 Aira Shipping. All Rights Reserved.</p>
 </footer>
 
 <button id="topBtn">
-  <i class="fas fa-arrow-up"></i>
+  Back To Top <i class="fas fa-arrow-up"></i>
 </button>
 
 <script src="script.js"></script>
