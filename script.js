@@ -18,15 +18,11 @@ function closeMenu(){
   overlay.style.display = "none";
 }
 
-// ===== FAQ Toggle Smooth Slide =====
+// ===== FAQ Toggle =====
 document.querySelectorAll(".faq-question").forEach(btn => {
   btn.onclick = () => {
     let ans = btn.nextElementSibling;
-    if(ans.style.display === "block"){
-      ans.style.display = "none";
-    } else {
-      ans.style.display = "block";
-    }
+    ans.style.display = ans.style.display === "block" ? "none" : "block";
   };
 });
 
@@ -37,7 +33,7 @@ window.addEventListener("scroll", () => {
 });
 topBtn.onclick = () => window.scrollTo({top:0,behavior:"smooth"});
 
-// ===== Scroll Reveal with Stagger =====
+// ===== Scroll Reveal (Hero & About) =====
 const revealElements = document.querySelectorAll(".reveal");
 function reveal(){
   revealElements.forEach((el,index) => {
