@@ -3,31 +3,28 @@ const mobileNav = document.getElementById("mobileNav");
 const overlay = document.getElementById("overlay");
 
 menuBtn.onclick = () => {
-  mobileNav.classList.add("active");
+  mobileNav.style.right = "0";
   overlay.style.display = "block";
 };
 
-overlay.onclick = closeMenu;
-
-function closeMenu() {
-  mobileNav.classList.remove("active");
+overlay.onclick = () => {
+  mobileNav.style.right = "-100%";
   overlay.style.display = "none";
-}
+};
 
-// FAQ
-document.querySelectorAll(".faq-question").forEach(q => {
-  q.addEventListener("click", () => {
-    q.parentElement.classList.toggle("active");
+// FAQ Toggle
+document.querySelectorAll(".faq-question").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    let answer = btn.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
   });
 });
 
-// Scroll to top
+// Back To Top
 const topBtn = document.getElementById("topBtn");
 
-window.onscroll = () => {
+window.addEventListener("scroll",()=>{
   topBtn.style.display = window.scrollY > 300 ? "block" : "none";
-};
+});
 
-topBtn.onclick = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
+topBtn.onclick = () => window.scrollTo({top:0, behavior:"smooth"});
